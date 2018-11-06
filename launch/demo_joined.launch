@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <node name="double_joined_ros_kafka_bridge" pkg="ros1_kafka_bridge" type="double_joined_ros_kafka_bridge.py">
+  </node>
+  <node name="double_joined_dummy_kafka_pro_con" pkg="ros1_kafka_bridge" type="double_joined_dummy_kafka_pro_con.py">
+  </node>
+  <node name="double_joined_dummy_ros_pub_sub" pkg="ros1_kafka_bridge" type="double_joined_dummy_ros_pub_sub.py">
+  </node>
+  
+</launch>
