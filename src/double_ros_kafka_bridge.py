@@ -4,7 +4,7 @@
 # authors, description, version
 #----------------------------------------------------------------------------------------
     # Endre Eres
-    # ROS-Kafka Bridge for 2 Kafka and 2 ROS topics: double_joined_ros_kafka_bridge.py
+    # ROS-Kafka Bridge for 2 Kafka and 2 ROS topics: double_ros_kafka_bridge.py
     # V.2.0.0.
 #----------------------------------------------------------------------------------------
 
@@ -18,11 +18,11 @@ from std_msgs.msg import String
 from kafka import KafkaProducer
 from kafka import KafkaConsumer
 
-class double_joined_ros_kafka_bridge():
+class double_ros_kafka_bridge():
 
     def __init__(self):
 
-        rospy.init_node('double_joined_ros_kafka_bridge', anonymous=False)
+        rospy.init_node('double_ros_kafka_bridge', anonymous=False)
 
         self.publisher1 = rospy.Publisher('bridge_to_ros_topic_1', String, queue_size=10)
         self.publisher2 = rospy.Publisher('bridge_to_ros_topic_2', String, queue_size=10)
@@ -88,6 +88,6 @@ class double_joined_ros_kafka_bridge():
 
 if __name__ == '__main__':
     try:
-        double_joined_ros_kafka_bridge()
+        double_ros_kafka_bridge()
     except KeyboardInterrupt:
         pass

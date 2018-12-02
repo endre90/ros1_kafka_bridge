@@ -4,7 +4,7 @@
 # authors, description, version
 #----------------------------------------------------------------------------------------
     # Endre Eres
-    # Dummy Kafka consumer: single_dummy_kafka_con_1.py
+    # Dummy Kafka consumer: single_kafka_con_1.py
     # V.2.0.0.
 #----------------------------------------------------------------------------------------
 
@@ -13,7 +13,7 @@ import json
 from kafka import KafkaProducer
 from kafka import KafkaConsumer
 
-class single_dummy_kafka_con_1():
+class single_kafka_con_1():
 
     def __init__(self):
 
@@ -35,6 +35,6 @@ class single_dummy_kafka_con_1():
     
 if __name__ == '__main__':
     try:
-        single_dummy_kafka_con_1()
+        single_kafka_con_1()
     except KeyboardInterrupt:
         pass

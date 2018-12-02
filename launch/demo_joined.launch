@@ -2,11 +2,11 @@
 
 <launch>
 
-  <node name="double_joined_ros_kafka_bridge" pkg="ros1_kafka_bridge" type="double_joined_ros_kafka_bridge.py">
+  <node name="double_ros_kafka_bridge" pkg="ros1_kafka_bridge" type="double_ros_kafka_bridge.py">
   </node>
-  <node name="double_joined_dummy_kafka_pro_con" pkg="ros1_kafka_bridge" type="double_joined_dummy_kafka_pro_con.py">
+  <node name="double_kafka_pro_con" pkg="ros1_kafka_bridge" type="double_kafka_pro_con.py">
   </node>
-  <node name="double_joined_dummy_ros_pub_sub" pkg="ros1_kafka_bridge" type="double_joined_dummy_ros_pub_sub.py">
+  <node name="double_ros_pub_sub" pkg="ros1_kafka_bridge" type="double_ros_pub_sub.py">
   </node>
   
 </launch>

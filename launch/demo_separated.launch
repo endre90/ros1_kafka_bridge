@@ -2,17 +2,17 @@
 
 <launch>
 
-  <node name="single_dummy_kafka_con_1" pkg="ros1_kafka_bridge" type="single_dummy_kafka_con_1.py">
+  <node name="single_kafka_con_1" pkg="ros1_kafka_bridge" type="single_kafka_con_1.py">
   </node>
-  <node name="single_dummy_kafka_con_2" pkg="ros1_kafka_bridge" type="single_dummy_kafka_con_2.py">
+  <node name="single_kafka_con_2" pkg="ros1_kafka_bridge" type="single_kafka_con_2.py">
   </node>
-  <node name="single_dummy_kafka_pro_1" pkg="ros1_kafka_bridge" type="single_dummy_kafka_pro_1.py">
+  <node name="single_kafka_pro_1" pkg="ros1_kafka_bridge" type="single_kafka_pro_1.py">
   </node>
-  <node name="single_dummy_kafka_pro_2" pkg="ros1_kafka_bridge" type="single_dummy_kafka_pro_2.py">
+  <node name="single_kafka_pro_2" pkg="ros1_kafka_bridge" type="single_kafka_pro_2.py">
   </node>
-  <node name="single_dummy_ros_pub_sub_1" pkg="ros1_kafka_bridge" type="single_dummy_ros_pub_sub_1.py">
+  <node name="single_ros_pub_sub_1" pkg="ros1_kafka_bridge" type="single_ros_pub_sub_1.py">
   </node>
-  <node name="single_dummy_ros_pub_sub_2" pkg="ros1_kafka_bridge" type="single_dummy_ros_pub_sub_2.py">
+  <node name="single_ros_pub_sub_2" pkg="ros1_kafka_bridge" type="single_ros_pub_sub_2.py">
   </node>
   <node name="single_ros_kafka_bridge_topic_1" pkg="ros1_kafka_bridge" type="single_ros_kafka_bridge_topic_1.py">
   </node>

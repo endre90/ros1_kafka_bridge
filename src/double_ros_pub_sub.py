@@ -4,7 +4,7 @@
 # authors, description, version
 #----------------------------------------------------------------------------------------
     # Endre Eres
-    # Dummy ROS 2 Publisher - 2 Subscriber mutlithreaded example: double_joined_dummy_ros_pub_sub.py
+    # Dummy ROS 2 Publisher - 2 Subscriber example: double_ros_pub_sub.py
     # V.2.0.0.
 #----------------------------------------------------------------------------------------
 
@@ -14,13 +14,14 @@ import roslib
 import threading
 from std_msgs.msg import String
 
-class double_joined_dummy_ros_pub_sub():
+class double_ros_pub_sub():
 
     def __init__(self):
 
         time.sleep(1) #Wait for the bridge to start
+        # Maybe use timed roslaunch in order to do this
 
-        rospy.init_node('double_joined_dummy_ros_pub_sub', anonymous=False)
+        rospy.init_node('double_ros_pub_sub', anonymous=False)
 
         self.pub = rospy.Publisher('ros_to_bridge_topic_1', String, queue_size=10)
         self.pub2 = rospy.Publisher('ros_to_bridge_topic_2', String, queue_size=10)
@@ -72,6 +73,6 @@ class double_joined_dummy_ros_pub_sub():
 
 if __name__ == '__main__':
     try:
-        double_joined_dummy_ros_pub_sub()
+        double_ros_pub_sub()
     except rospy.ROSInterruptException:
         pass

@@ -4,7 +4,7 @@
 # authors, description, version
 #----------------------------------------------------------------------------------------
     # Endre Eres
-    # Dummy Kafka 2 Producer - 2 Consumer mutlithreaded example: double_joined_dummy_kafka_pro_con.py
+    # Dummy Kafka 2 Producer - 2 Consumer example: double_kafka_pro_con.py
     # V.2.0.0.
 #----------------------------------------------------------------------------------------
 
@@ -14,7 +14,7 @@ import threading
 from kafka import KafkaProducer
 from kafka import KafkaConsumer
 
-class double_joined_dummy_kafka_pro_con():
+class double_kafka_pro_con():
 
     def __init__(self):
 
@@ -90,6 +90,6 @@ class double_joined_dummy_kafka_pro_con():
     
 if __name__ == '__main__':
     try:
-        double_joined_dummy_kafka_pro_con()
+        double_kafka_pro_con()
     except KeyboardInterrupt:
         pass
